@@ -48,19 +48,22 @@ h1 {
 	*/
 }
 
+/*
 .motyl {
   width: 170px;
   height: 118px;
   position: absolute;
   left: calc((700px - 170px)/2);
   top: calc((400px - 118px)/2);
-  /*
+  */
+/*
 		kočka nejraději honí motýly přesně
 		uprostřed domečku, protože tam má na
 		dovádění nejvíc místa
     nestačí umístit na půlku, protoze se pozicuje od kraje objektu
     proto odečtu ještě samotny objekt a spocitam pulku mezery. 
     možno také jinak - 
+    */
 .motyl {
   width: 170px;
   height: 118px;
@@ -69,6 +72,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/*
   takto jí nastavím na střed a posunu o její polovinu zpátky. Takto bude vždy uprostřed.
 	*/
 }
