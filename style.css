@@ -30,6 +30,8 @@ h1 {
 		tady asi budeš muset něco přidat, abys
 		pak mohla pozicovat kočky v rámci domečku
 		a ne celé stránky
+    relative způsobí, že se ostatní objekty pozicujou na něj a ne na stranku, 
+    bere to jako hlavní objekt
 	*/
 }
 
@@ -42,6 +44,7 @@ h1 {
   /*
 		kočka si svoje zamilované dopisy
 		nejraději čte v levém dolním rohu domečku
+    stačí zadat od zdola 0 protoze doleva se pozicuje automaticky
 	*/
 }
 
@@ -55,6 +58,18 @@ h1 {
 		kočka nejraději honí motýly přesně
 		uprostřed domečku, protože tam má na
 		dovádění nejvíc místa
+    nestačí umístit na půlku, protoze se pozicuje od kraje objektu
+    proto odečtu ještě samotny objekt a spocitam pulku mezery. 
+    možno také jinak - 
+.motyl {
+  width: 170px;
+  height: 118px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  takto jí nastavím na střed a posunu o její polovinu zpátky. Takto bude vždy uprostřed.
 	*/
 }
 
@@ -70,6 +85,7 @@ h1 {
 		ale nejraději tak, aby v rohu domečku
 		nebyl její levý horní roh, ale její střed
 		(tj. vyčuhuje z domečku ven)
+    umístění může mít i mínusové hodnoty
 	*/
 }
 
